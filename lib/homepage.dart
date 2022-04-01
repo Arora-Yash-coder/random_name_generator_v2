@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Random Word Generator'),
+        backgroundColor: Colors.pinkAccent,
       ),
       body: const Center(child: NewWidget()),
     );

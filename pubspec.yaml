@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   english_words: ^4.0.0
   rename: ^2.0.1
+  flutter_launcher_icons: ^0.9.2
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "lib/images/icon.png"
 
 dev_dependencies:
   flutter_test:

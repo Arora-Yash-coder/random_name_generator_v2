@@ -9,10 +9,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Random Word Generator'),
+        title: const Text('Random Name Generator'),
         backgroundColor: Colors.pinkAccent,
       ),
-      body: const Center(child: NewWidget()),
+      body: const Center(
+        child: NewWidget(),
+      ),
     );
   }
 }

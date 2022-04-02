@@ -10,8 +10,11 @@ class NewWidget extends StatefulWidget {
 }
 
 class _NewWidgetState extends State<NewWidget> {
+  // Collection of all the Word Pairs
   final _suggestions = <WordPair>[];
+  // Custom Text Size
   final _biggerFont = const TextStyle(fontSize: 18);
+
   @override
   Widget build(BuildContext context) {
     return _buildSuggestions();
@@ -26,7 +29,6 @@ class _NewWidgetState extends State<NewWidget> {
             color: Colors.pinkAccent,
           );
         }
-
         final index = i ~/ 2;
         if (index >= _suggestions.length) {
           _suggestions.addAll(generateWordPairs().take(10));
@@ -36,6 +38,7 @@ class _NewWidgetState extends State<NewWidget> {
     );
   }
 
+  // List Tile UI
   Widget _buildRow(WordPair pair) {
     return ListTile(
       title: Center(
